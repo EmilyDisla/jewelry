@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="es" style="scroll-behavior: smooth;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mariel Jewelry - Joyería Elegante</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <meta name="description" content="Joyería artesanal exclusiva, elegancia y diseño en cada pieza. Descubre nuestras colecciones y productos destacados.">
+    <meta name="keywords" content="joyería, artesanal, lujo, moda, collares, anillos, aretes, brazaletes, Mariel Jewelry">
+    <meta name="author" content="Mariel Jewelry">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Mariel Jewelry - Joyería Elegante">
+    <meta property="og:description" content="Descubre la elegancia en cada detalle con nuestra colección exclusiva de joyería artesanal.">
+    <meta property="og:image" content="./images/hero-jewelry.jpg">
+    <meta property="og:type" content="website">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Aquí Copilot agregará la estructura y secciones del sitio -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm rounded-bottom sticky-top py-3 px-4" style="backdrop-filter: blur(8px);">
+            <div class="container-fluid">
+                <div class="logo d-flex align-items-center">
+                    <i class="bi bi-gem me-2" style="font-size:2rem;color:var(--primary-color);"></i>
+                    <h1 class="mb-0" style="font-size:2rem;letter-spacing:2px;">Mariel Jewelry</h1>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Abrir menú">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mainNavbar">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 nav-links">
+                        <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#colecciones">Colecciones</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#productos">Productos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#caracteristicas">Características</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#enlaces-interes">Enlaces</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#articulos">Artículos</a></li>
+                    </ul>
+                    <div class="d-flex align-items-center nav-icons ms-3">
+                        <a href="#buscar" class="me-3" aria-label="Buscar"><i class="bi bi-search"></i></a>
+                        <a href="#carrito" class="cart-icon me-3 position-relative" aria-label="Carrito de compras">
+                            <i class="bi bi-bag"></i>
+                            <span class="cart-count position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0</span>
+                        </a>
+                        <a href="#cuenta" aria-label="Mi cuenta"><i class="bi bi-person"></i></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Hero principal -->
+    <section id="inicio" class="hero d-flex align-items-center justify-content-center">
+        <div class="hero-content text-center">
+            <h2>Descubre la Elegancia en Cada Detalle</h2>
+            <p>Colección exclusiva de joyería artesanal</p>
+            <a href="#colecciones" class="btn btn-primary btn-lg mt-3">Ver Colección</a>
+        </div>
+    </section>
+    <!-- Carrusel Bootstrap -->
+    <section id="carrusel" class="container my-5">
+        <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./images/hero-jewelry.jpg" class="d-block w-100" alt="Joyería hero">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Elegancia Artesanal</h5>
+                        <p>Descubre piezas únicas y sofisticadas.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/elegance-collection.jpg" class="d-block w-100" alt="Colección Elegancia">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Colección Elegancia</h5>
+                        <p>Diseños atemporales para cada ocasión.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/minimal-collection.jpg" class="d-block w-100" alt="Colección Minimal">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Colección Minimal</h5>
+                        <p>Simplicidad y belleza en cada pieza.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+    </section>
+    <!-- Colecciones y productos -->
+    <section id="colecciones" class="collections container my-5">
+        <h2 class="text-center mb-4">Nuestras Colecciones</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="collection-card card h-100">
+                    <img src="./images/spring-collection.jpg" class="card-img-top" alt="Colección Primavera">
+                    <div class="card-body">
+                        <h3 class="card-title">Colección Primavera</h3>
+                        <p class="card-text">Piezas frescas y vibrantes</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="collection-card card h-100">
+                    <img src="./images/elegance-collection.jpg" class="card-img-top" alt="Colección Elegancia">
+                    <div class="card-body">
+                        <h3 class="card-title">Colección Elegancia</h3>
+                        <p class="card-text">Diseños sofisticados y atemporales</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="collection-card card h-100">
+                    <img src="./images/minimal-collection.jpg" class="card-img-top" alt="Colección Minimal">
+                    <div class="card-body">
+                        <h3 class="card-title">Colección Minimal</h3>
+                        <p class="card-text">Simplicidad y belleza en cada pieza</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="productos" class="products container my-5">
+        <h2 class="text-center mb-4">Productos Destacados</h2>
+        <div class="row g-4">
+            <div class="col-md-3">
+                <div class="product-card card h-100" data-featured="true">
+                    <img src="./images/product-1.jpg" class="card-img-top" alt="Collar Diamante">
+                    <div class="card-body">
+                        <h3 class="card-title">Anillo rubi</h3>
+                        <p class="price">$1,200</p>
+                        <button class="btn btn-secondary add-to-cart w-100 mt-2" data-id="1" data-name="Collar Diamante" data-price="1200">Añadir al Carrito</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="product-card card h-100" data-featured="true">
+                    <img src="./images/product-2.jpg" class="card-img-top" alt="Aretes Perla">
+                    <div class="card-body">
+                        <h3 class="card-title">Collar Perlas</h3>
+                        <p class="price">$800</p>
+                        <button class="btn btn-secondary add-to-cart w-100 mt-2" data-id="2" data-name="Aretes Perla" data-price="800">Añadir al Carrito</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="product-card card h-100">
+                    <img src="./images/product-3.jpg" class="card-img-top" alt="Anillo Rubí">
+                    <div class="card-body">
+                        <h3 class="card-title">Brazaletes de Oro</h3>
+                        <p class="price">$950</p>
+                        <button class="btn btn-secondary add-to-cart w-100 mt-2" data-id="3" data-name="Anillo Rubí" data-price="950">Añadir al Carrito</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="product-card card h-100">
+                    <img src="./images/product-4.jpg" class="card-img-top" alt="Brazalete Oro">
+                    <div class="card-body">
+                        <h3 class="card-title">Pendientes diamantes</h3>
+                        <p class="price">$1,500</p>
+                        <button class="btn btn-secondary add-to-cart w-100 mt-2" data-id="4" data-name="Brazalete Oro" data-price="1500">Añadir al Carrito</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Características con listas -->
+    <section id="caracteristicas" class="features container my-5">
+        <h2 class="text-center mb-4">¿Por qué elegir Mariel Jewelry?</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <h3>Ventajas principales</h3>
+                <ol>
+                    <li>Diseño artesanal exclusivo</li>
+                    <li>Materiales de alta calidad</li>
+                    <li>Atención personalizada</li>
+                    <li>Envíos a todo el país</li>
+                    <li>Garantía de satisfacción</li>
+                </ol>
+            </div>
+            <div class="col-md-6">
+                <h3>Lo que ofrecemos</h3>
+                <ul>
+                    <li>Collares, anillos, aretes y brazaletes</li>
+                    <li>Ediciones limitadas</li>
+                    <li>Promociones exclusivas</li>
+                    <li>Atención al cliente 24/7</li>
+                    <li>Embalaje de regalo</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- Contacto -->
+    <section id="contacto" class="contact container my-5">
+        <h2 class="text-center mb-4">Contacto</h2>
+        <div class="row g-4 align-items-center">
+            <div class="col-md-6">
+                <form class="contact-form">
+                    <input type="text" class="form-control mb-3" placeholder="Nombre" required>
+                    <input type="email" class="form-control mb-3" placeholder="Email" required>
+                    <textarea class="form-control mb-3" placeholder="Mensaje" required></textarea>
+                    <button type="submit" class="btn btn-primary w-100">Enviar Mensaje</button>
+                </form>
+                <a href="mailto:info@marieljewelry.com" class="btn btn-outline-primary mt-3 w-100">Enviar correo</a>
+            </div>
+            <div class="col-md-6">
+                <div class="contact-info p-4 bg-light rounded shadow-sm">
+                    <h3>Información de Contacto</h3>
+                    <p><i class="bi bi-geo-alt"></i> Dirección: Calle Principal #123</p>
+                    <p><i class="bi bi-telephone"></i> Teléfono: (123) 456-7890</p>
+                    <p><i class="bi bi-envelope"></i> Email: info@marieljewelry.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Modal de Políticas de Privacidad -->
+    <div class="modal fade" id="privacyModal" tabindex="-1" aria-labelledby="privacyModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="privacyModalLabel">Políticas de Privacidad</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+          </div>
+          <div class="modal-body">
+            <p>En Mariel Jewelry, valoramos tu privacidad. Toda la información personal proporcionada será utilizada únicamente para procesar tus pedidos y mejorar tu experiencia en nuestro sitio. No compartimos tus datos con terceros sin tu consentimiento.</p>
+            <ul>
+              <li>Recopilamos datos solo para fines de contacto y envío.</li>
+              <li>Tu información está protegida y cifrada.</li>
+              <li>Puedes solicitar la eliminación de tus datos en cualquier momento.</li>
+            </ul>
+            <p>Para más información, contáctanos a <a href="mailto:info@marieljewelry.com">info@marieljewelry.com</a>.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Enlaces de interés -->
+    <section id="enlaces-interes" class="container my-5">
+        <h2 class="text-center mb-4">Enlaces de Interés</h2>
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <h4>Video sobre Joyería Artesanal</h4>
+                <div class="ratio ratio-16x9">
+                    <iframe src="https://www.youtube.com/embed/2Vv-BfVoq4g" title="YouTube video" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <h4>Nuestra Ubicación</h4>
+                <div class="ratio ratio-16x9">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3876.857013232978!2d-70.6667!3d19.4500!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8eb1cf6e8e8e8e8e%3A0x8e8e8e8e8e8e8e!2sCalle%20Principal%20123!5e0!3m2!1ses!2sdo!4v1689000000000!5m2!1ses!2sdo" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Artículos/noticias -->
+    <section id="articulos" class="container my-5">
+        <h2 class="text-center mb-4">Noticias y Artículos</h2>
+        <div class="row">
+            <article class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="./images/elegance-collection.jpg" class="card-img-top" alt="Tendencias en Joyería 2025">
+                    <div class="card-body">
+                        <h5 class="card-title">Tendencias en Joyería 2025</h5>
+                        <p class="card-text">Descubre las últimas tendencias en joyería artesanal para este año: piezas minimalistas, combinaciones de metales y gemas de colores vibrantes.</p>
+                        <a href="#" class="btn btn-outline-primary">Leer más</a>
+                    </div>
+                </div>
+            </article>
+            <article class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="./images/product-1.jpg" class="card-img-top" alt="Cómo cuidar tus joyas">
+                    <div class="card-body">
+                        <h5 class="card-title">¿Cómo cuidar tus joyas?</h5>
+                        <p class="card-text">Aprende los mejores consejos para mantener tus joyas como nuevas: limpieza, almacenamiento y cuidados diarios para prolongar su brillo.</p>
+                        <a href="#" class="btn btn-outline-primary">Leer más</a>
+                    </div>
+                </div>
+            </article>
+            <article class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="./images/product-2.jpg" class="card-img-top" alt="Historia de la joyería artesanal">
+                    <div class="card-body">
+                        <h5 class="card-title">Historia de la Joyería Artesanal</h5>
+                        <p class="card-text">Un recorrido por la evolución de la joyería hecha a mano, desde las civilizaciones antiguas hasta las tendencias modernas.</p>
+                        <a href="#" class="btn btn-outline-primary">Leer más</a>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="mt-5">
+        <div class="footer-content container py-4">
+            <div class="footer-section">
+                <h3>Mariel Jewelry</h3>
+                <p>Descubre la elegancia en cada detalle con nuestra colección exclusiva de joyería artesanal. Cada pieza está diseñada con pasión y cuidado para realzar tu belleza natural.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                    <a href="#" aria-label="Pinterest"><i class="bi bi-pinterest"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Enlaces Rápidos</h3>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#colecciones">Colecciones</a></li>
+                    <li><a href="#productos">Productos</a></li>
+                    <li><a href="#caracteristicas">Características</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                    <li><a href="#enlaces-interes">Enlaces</a></li>
+                    <li><a href="#articulos">Artículos</a></li>
+                    <li><a href="#" data-bs-toggle="modal" data-bs-target="#privacyModal">Políticas de Privacidad</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <p><i class="bi bi-geo-alt"></i> Calle Principal #123, Ciudad</p>
+                <p><i class="bi bi-telephone"></i> (123) 456-7890</p>
+                <p><i class="bi bi-envelope"></i> info@marieljewelry.com</p>
+            </div>
+            <div class="footer-section">
+                <h3>Newsletter</h3>
+                <p>Suscríbete para recibir nuestras últimas novedades y ofertas exclusivas.</p>
+                <form class="newsletter-form">
+                    <input type="email" class="form-control mb-2" placeholder="Tu correo electrónico" required>
+                    <button type="submit" class="btn btn-primary w-100">Suscribirse</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom text-center py-2">
+            <p>&copy; 2025 Mariel Jewelry. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <!-- Botón de modo oscuro -->
+    <button class="theme-toggle btn btn-light position-fixed end-0 bottom-0 m-4 shadow" aria-label="Cambiar tema" style="z-index:9999;">
+        <i class="bi bi-moon"></i>
+    </button>
+    <!-- Popup de Mensaje -->
+    <div class="overlay" id="overlay"></div>
+    <div class="message-popup" id="messagePopup">
+        <i class="bi bi-check-circle-fill text-success" style="font-size:2rem;"></i>
+        <p>¡Mensaje enviado con éxito!</p>
+        <button class="btn btn-success mt-2" onclick="closeMessagePopup()">Aceptar</button>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
